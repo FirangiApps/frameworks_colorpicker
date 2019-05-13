@@ -1,3 +1,10 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
+}
 apply plugin: 'com.android.library'
 
 android {
@@ -6,4 +13,9 @@ android {
         java.srcDirs = ['src']
         res.srcDirs = ['res']
     }
+}
+repositories {
+    mavenCentral()
+    jcenter()
+    google()
 }
